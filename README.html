@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Nuevo - Tu aliado financiero</title>
+  <style>
+    /* General */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Arial", sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .top-bar {
+      background: #002f6c;
+      color: white;
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #fff;
+      border-bottom: 2px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #002f6c;
+    }
+    .logo span {
+      color: #f58220;
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu li a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #002f6c;
+      font-weight: bold;
+    }
+    .menu li a:hover {
+      color: #f58220;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      list-style: none;
+      top: 40px;
+      left: 0;
+      padding: 10px 0;
+    }
+    .submenu li a {
+      padding: 10px 20px;
+      display: block;
+      color: #333;
+    }
+    .dropdown:hover .submenu {
+      display: block;
+    }
+
+    .login-btn a {
+      background: #f58220;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .login-btn a:hover {
+      background: #d96c18;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/1200/400') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+    }
+    .cta {
+      background: #f58220;
+      padding: 12px 20px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta:hover {
+      background: #d96c18;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+    main section {
+      margin-bottom: 40px;
+    }
+    main h2 {
+      color: #002f6c;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f58220;
+      display: inline-block;
+    }
+
+    footer {
+      background: #002f6c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #f58220;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <span>Tipo de cambio: 1 USD = 59.50 DOP</span>
+    <span>Idioma: ES | EN</span>
+  </div>
+
+  <header>
+    <div class="logo">Banco<span>Nuevo</span></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Personas</a>
+          <ul class="submenu">
+            <li><a href="#cuentas">Cuentas</a></li>
+            <li><a href="#tarjetas">Tarjetas</a></li>
+            <li><a href="#prestamos">Préstamos</a></li>
+            <li><a href="#inversiones">Inversiones</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Empresas</a>
+          <ul class="submenu">
+            <li><a href="#emp-cuentas">Cuentas Empresariales</a></li>
+            <li><a href="#financiamiento">Financiamiento</a></li>
+            <li><a href="#cash">Cash Management</a></li>
+          </ul>
+        </li>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#digitales">Canales Digitales</a></li>
+        <li><a href="#contacto">Atención al Cliente</a></li>
+      </ul>
+    </nav>
+    <div class="login-btn">
+      <a href="#login">Ingresar</a>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Tu futuro financiero empieza aquí</h1>
+    <p>Con Banco Nuevo, tus metas están más cerca. Cuentas, préstamos, inversiones y mucho más.</p>
+    <a href="#cuentas" class="cta">Conoce más</a>
+  </section>
+
+  <main>
+    <section id="cuentas">
+      <h2>Cuentas para ti</h2>
+      <p>Desde cuentas de ahorro hasta cuentas digitales, tenemos una solución diseñada para tus necesidades.</p>
+    </section>
+
+    <section id="tarjetas">
+      <h2>Tarjetas</h2>
+      <p>Tarjetas de crédito y débito con beneficios únicos: acumula puntos, controla tus gastos y compra de forma segura.</p>
+    </section>
+
+    <section id="prestamos">
+      <h2>Préstamos</h2>
+      <p>Consigue el financiamiento que necesitas: consumo, hipotecario, vehicular o educativo.</p>
+    </section>
+
+    <section id="inversiones">
+      <h2>Inversiones</h2>
+      <p>Haz crecer tu dinero con depósitos a plazo, fondos y opciones diversificadas.</p>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Banco Nuevo es una institución sólida y confiable, con compromiso social y visión innovadora.</p>
+    </section>
+
+    <section id="digitales">
+      <h2>Canales Digitales</h2>
+      <p>Accede a tu dinero donde quieras: banca online, app móvil, cajeros automáticos y más.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Atención al Cliente</h2>
+      <p>Contáctanos por teléfono, chat en línea o en nuestras oficinas. Tu satisfacción es nuestra prioridad.</p>
+    </section>
+  </main>
+
+  <div id="login" class="modal">
+    <div class="modal-content">
+      <h2>Acceso a clientes</h2>
+      <form>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" placeholder="Tu usuario">
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" placeholder="Tu contraseña">
+        <button type="submit">Entrar</button>
+      </form>
+      <a href="#" class="close">Cerrar</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Banco Nuevo. Todos los derechos reservados.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
